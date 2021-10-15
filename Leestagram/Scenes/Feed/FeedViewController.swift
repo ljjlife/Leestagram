@@ -64,8 +64,6 @@ extension FeedViewController: UIImagePickerControllerDelegate, UINavigationContr
             selectImage = originalImage
         }
         
-        print(selectImage)
-        
         picker.dismiss(animated: true) { [weak self] in
             
             let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())
